@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary: #764ffe;
+    --second: #4129fd;
+    --third: #0c03fd;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Ubuntu";
+}
+
+h2 {
+    font-family: "Poetsen One";
+}
+
+h3 {
+    font-family: "Ubuntu";
+}
+
+summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+summary h4 {
+    color: #ffffff;
+}
+
+summary h4:hover {
+    color: #764ffe;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em;
+        background: var(--third);
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-link {
+        background: var(--third);
+        text-align: center;
+        padding: 1em;
+    }
+
+    .nav-link a {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .icon,
+    .logo {
+        height: 2em;
+    }
+
+    #home {
+        position: relative;
+        height: 55vh;
+    }
+
+    #home::before {
+        background: url("../imgs/image-1-mobile.jpg") no-repeat;
+        background-size: cover;
+        content: "";
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+    }
+
+    .banner {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .b-desc h2 {
+        padding-top: 30%;
+        text-shadow: 0 5px 5px #000000;
+    }
+
+    .b-profile {
+        display: none;
+    }
+
+    #valores {
+        margin: 2em;
+        text-align: center;
+    }
+
+    .valores-items {
+        color: #ffffff;
+        text-align: justify;
+    }
+
+    .vitems {
+        background: var(--second);
+        margin: .25em 0;
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .ico {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .vitems h3 {
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    #servicos {
+        margin: 2em;
+    }
+
+    .planos-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pitems {
+        background: var(--second);
+        border-radius: 1em;
+        color: #ffffff;
+        padding: 1em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    .pitems button {
+        background: var(--third);
+        color: #ffffff;
+        border-radius: 1em;
+        padding: 1em;
+        border: none;
+        margin-top: 8em;
+    }
+
+    .pitems button:hover {
+        background: var(--primary);
+    }
+
+    #quest {
+        margin: 2em;
+        text-align: center;
+    }
+
+    .quest-items {
+        color: #ffffff;
+        text-align: justify;
+    }
+
+    .qitem {
+        background: var(--second);
+        margin: .25em 0;
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .ico {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .qitems h3 {
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    #contato {
+        margin: 2em;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .profile-desc {
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .profile-desc p {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .profile-desc button {
+        background: var(--second);
+        color: #ffffff;
+        border-radius: 1em;
+        padding: 1em;
+        border: none;
+        margin-top: 1em;
+    }
+
+    .profile-desc button:hover {
+        background: var(--primary);
+    }
+
+    .profile img {
+        width: 12em;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+
+    #rodape {
+        background: var(--third);
+        color: #ffffff;
+        font-size: .90em;
+        text-align: center;
+    }
+
+    .col {
+        padding: 1em;
+    }
+
+    .col a {
+        color: #ffffff;
+    }
+
+    .col a:hover {
+        color: var(--second);
+    }
+
+    .float {
+        position: fixed;
+        width: 2em;
+        height: 2em;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5em 6em;
+        background: var(--third);
+    }
+
+    .nav-link a {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        display: none;
+        height: 64px;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin: 0 15px;
+    }
+
+    .nav-item img {
+        height: 64px;
+        border-radius: 50%;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .mobile-menu-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .icon,
+    .logo {
+        height: 2em;
+    }
+
+    #home {
+        position: relative;
+        height: 100vh;
+    }
+
+    #home::before {
+        background: url("../imgs/image-1-mobile.jpg") no-repeat;
+        background-size: cover;
+        content: "";
+        width: 100%;
+        height: 100%;
+        filter: blur(1px);
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+    }
+
+    .banner {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .b-desc h2 {
+        padding-top: 30%;
+        text-shadow: 0 5px 5px #000000;
+    }
+
+    .b-profile {
+        display: none;
+    }
+
+    #valores {
+        margin: 2em;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .valores-items {
+        display: flex;
+        flex-direction: row;
+        color: #ffffff;
+        text-align: justify;
+    }
+
+    .vitems {
+        background: var(--second);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 0 .5em;
+        min-width: 12em;
+        max-width: 18em;
+    }
+
+    .ico {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .vitems h3 {
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    #servicos {
+        margin: 2em;
+        text-align: center;
+    }
+
+    .planos-items {
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+    }
+
+    .pitems {
+        background: var(--second);
+        border-radius: 1em;
+        color: #ffffff;
+        min-width: 12em;
+        max-width: 18em;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .pitems button {
+        background: var(--second);
+        color: #ffffff;
+        border-radius: 1em;
+        padding: 1em;
+        border: none;
+        position: relative;
+        left: 25%;
+        margin-top: 8em;
+    }
+
+    .pitems button:hover {
+        background: var(--primary);
+    }
+
+    #quest {
+        margin: 2em;
+        text-align: center;
+    }
+
+    .quest-items {
+        color: #ffffff;
+        text-align: justify;
+    }
+
+    .qitem {
+        background: var(--third);
+        margin: .25em 0;
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .ico {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .qitems h3 {
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    #contato {
+        margin: 2em;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .profile-desc {
+        text-align: center;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .profile-desc button {
+        background: var(--third);
+        color: #ffffff;
+        border-radius: 1em;
+        padding: 1em;
+        border: none;
+        margin-top: 1em;
+    }
+
+    .profile-desc button:hover {
+        background: var(--primary);
+    }
+
+    .profile img {
+        width: 12em;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+
+    #rodape {
+        background: var(--third);
+        color: #ffffff;
+        font-size: .90em;
+        text-align: center;
+    }
+
+    .col {
+        padding: 1em;
+    }
+
+    .col a {
+        color: #ffffff;
+    }
+
+    .col a:hover {
+        color: var(--second);
+    }
+
+    .float {
+        position: fixed;
+        width: 2em;
+        height: 2em;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
+
+}
